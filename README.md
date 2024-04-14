@@ -29,7 +29,7 @@
 ## Casi speciali (scelte a mia discrezione)
 
 - Apostrofi:
-    - Nel caso in cui un apostofo non sia alla fine di una parola verrà considerato come l'inizio della successiva
+    - Nel caso in cui un apostrofo non sia alla fine di una parola verrà considerato come l'inizio della successiva
     - Se non avesse neanche una parola successiva per esempio ```parola1 ' parola2``` verrebbe cancellato
     - Se una parola ha due apostrofi prima o dopo viene considerato solo 1, cioè ```''ciao''``` è uguale a ```'ciao'```
     - Se due parola hanno più apostrofi in mezzo il primo viene considerato come appartenente alla prima parola e l'ultimo alla seconda, cioè ```ciao'''domani``` è uguale a ```ciao'``` e ```'domani```
