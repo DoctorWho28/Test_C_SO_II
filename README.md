@@ -2,29 +2,29 @@
 
 ## Scelte di implementazione
 - Il compito e il numero di processi viene deciso tramite degli input da linea di comando:
-    - per il compito: [-1, -2]
-    - per il numero di processi: -p
+    - per il compito: ```-1``` o ```-2```
+    - per il numero di processi: ```-p```
 
 - Gli unici caratteri consentiti sono:
-    - Range: (48-57), (65-90), (97-122)
+    - Range: ```[48-57]```, ```[65-90]```, ```[97-122]```
 
 
 ## Specifiche del prof
-- Il testo contiene solo caratteri in ASCII a 1 byte [0-127]
+- Il testo contiene solo caratteri in ASCII a 1 byte ```[0-127]```
 
-- Nella tabella ```csv``` le parole con maiuscole e minuscole sono considerate uguali, cioè oggi e OGGI saranno nella stessa riga
+- Nella tabella ```csv``` le parole con maiuscole e minuscole sono considerate uguali, cioè oggi, OgGi e OGGI saranno considerati come la stessa parola
 
-- Bisogna escludere tutte le punteggiature che non siano ```.```, ```!``` o ```?``` che sono terminatori di linea e vanno considerati come parole singole nella tabella ```csv```
+- Bisogna escludere tutte le punteggiature che non siano ```.```, ```!``` o ```?``` (che sono terminatori di linea) e vanno considerati come parole singole nella tabella ```csv```
 
 - Inoltre l'apostrofo ```'``` viene considerato come parte di una parola, cioè la parola ```l'esame``` verrà considerata come ```l'``` e ```esame```
 
 - La prima parola viene considerata come dopo un ```.```
 
-- L'ultima parola precede la prima cioè se nel caso in cui la prima parola sia ciao e l'ultima domani nella tabella avremo una riga con: ```domani,ciao,1```
+- L'ultima parola precede la prima cioè se nel caso in cui la prima parola sia ```ciao``` e l'ultima ```domani``` nella tabella avremo una riga con: ```domani,ciao```
 
-- Quando scrivo il testo dopo ```.```, ```!``` o ```?``` la prima lettera deve essere maiuscola
+- Quando viene scritto il testo dopo ```.```, ```!``` o ```?``` la prima lettera deve essere maiuscola
 
-- Nel caso non si inserisca una parola da cui iniziare nel compito 2 viene selezionata casualmente una punteggiatura tra ```.```, ```!``` o ```?``` e viene generata la prima parola tramite le probabilità della tabella
+- Nel caso non si inserisca una parola da cui iniziare (oppure la parola inserita non è presente) nel compito 2 viene selezionata casualmente una punteggiatura tra ```.```, ```!``` o ```?``` e viene generata la prima parola tramite le probabilità della tabella
 
 ## Casi speciali (scelte a mia discrezione)
 
