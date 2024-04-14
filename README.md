@@ -3,7 +3,7 @@
 ## Scelte di implementazione
 - Il compito e il numero di processi viene deciso tramite degli input da linea di comando:
     - per il compito: [-1, -2]
-    - per il numero di processi: -par
+    - per il numero di processi: -p
 
 - Gli unici caratteri consentiti sono:
     - Range: (48-57), (65-90), (97-122)
