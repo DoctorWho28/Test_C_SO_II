@@ -2,13 +2,13 @@ import os
 import math
 
 
-RANGE_ASCII=[(48,57),(65,90),(97,122)]#,(128,155),(160,167),(181,183),(192,214),(208,216),(224,237)]
-#ASCII_SINGLE=[157,181,182,183,198,199,222]
+RANGE_ASCII=[(48,57),(65,90),(97,122)]
+RANGE_2B=[(192,214),(216,246),(248,255)]
+RANGE_TOTAL=RANGE_ASCII+RANGE_2B
 ASCII_ACCEPT=[]
-for begin,end in RANGE_ASCII:
+for begin,end in RANGE_TOTAL:
     for n in range(begin,end+1):
         ASCII_ACCEPT.append(n)
-#ASCII_ACCEPT+=ASCII_SINGLE
 ASCII_ACCEPT.sort()
 
 
